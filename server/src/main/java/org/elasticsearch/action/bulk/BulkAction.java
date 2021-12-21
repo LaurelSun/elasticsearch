@@ -14,6 +14,7 @@ import org.elasticsearch.transport.TransportRequestOptions;
 public class BulkAction extends ActionType<BulkResponse> {
 
     public static final BulkAction INSTANCE = new BulkAction();
+    //根据名称找对应处理类
     public static final String NAME = "indices:data/write/bulk";
 
     private static final TransportRequestOptions TRANSPORT_REQUEST_OPTIONS =

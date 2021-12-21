@@ -467,6 +467,7 @@ public class ActionModule extends AbstractModule {
         return actions;
     }
 
+    //注册RPC请求模块信息 每一个action中的处理崽Transport.
     static Map<String, ActionHandler<?, ?>> setupActions(List<ActionPlugin> actionPlugins) {
         // Subclass NamedRegistry for easy registration
         class ActionRegistry extends NamedRegistry<ActionHandler<?, ?>> {

@@ -239,7 +239,7 @@ public interface Transport extends LifecycleComponent {
     }
 
     final class RequestHandlers {
-
+        //注册rpc模块对应列表  Map<String, RequestHandlerRegistry<? extends TransportRequest>>
         private volatile Map<String, RequestHandlerRegistry<? extends TransportRequest>> requestHandlers = Collections.emptyMap();
 
         synchronized <Request extends TransportRequest> void registerHandler(RequestHandlerRegistry<Request> reg) {

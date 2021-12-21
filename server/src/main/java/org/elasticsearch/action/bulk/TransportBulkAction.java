@@ -86,6 +86,10 @@ import static org.elasticsearch.index.seqno.SequenceNumbers.UNASSIGNED_SEQ_NO;
  * Groups bulk request items by shard, optionally creating non-existent indices and
  * delegates to {@link TransportShardBulkAction} for shard-level bulk execution
  */
+
+/**
+ * bulk具体操作逻辑
+ */
 public class TransportBulkAction extends HandledTransportAction<BulkRequest, BulkResponse> {
 
     private static final Logger logger = LogManager.getLogger(TransportBulkAction.class);
